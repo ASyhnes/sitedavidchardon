@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Accueil Tatouage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .image-container {
+            position: relative;
+            width: 500;
+            height: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .image-container:hover .text-container {
+            opacity: 1;
+        }
+        .image {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .text-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(128, 128, 128, 0.8);
+            padding: 20px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .text-container h2 {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        .text-container p {
+            font-size: 16px;
+            color: white;
+        }
+        .tab-bar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 100vh;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .tab-bar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .corner-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #f2f2f2;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+        .corner-button:hover {
+            background-color: #ff8888;
+        }
+        .corner-button:hover span {
+            color: white;
+        }
+        .corner-button:hover .corner-button-text {
+            opacity: 1;
+        }
+        .corner-button-text {
+            position: absolute;
+            top: 50%;
+            left: calc(100% + 10px);
+            transform: translateY(-50%);
+            width: 200px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <img class="image" src="Resources Img/Général/DIS1.png" alt="Image">
+        <div class="text-container">
+            <h2>Présentation</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mauris ac libero ultricies auctor.
+                Integer placerat ante ac metus dapibus mollis. Sed dictum nisi a arcu mollis eleifend. Sed at mi
+                eu nunc elementum feugiat. Aliquam eu neque a purus elementum efficitur. Vivamus luctus fringilla
+                massa sed varius. Mauris ac tempor mauris. Morbi et nisi elit. Cras placerat libero at ex
+                tincidunt bibendum. Suspendisse ut efficitur tortor, a venenatis ligula. Donec at est ut
+                tellus aliquet luctus. Nunc sollicitudin pharetra ante, ac tincidunt ex bibendum ut. Fusce
+                sem per tortor ac odio placerat fermentum. Nulla id pulvinar ante.</p>
+        </div>
+    </div>
+    <div class="tab-bar">
+        <a href="IntroTatouage.html">Présentation</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#flash-dispo">Flash Dispo</a>
+        <a href="#projet-sur-mesure">Projet sur Mesure</a>
+        <a href="#soin-avant-apres">Soin Avant/Après</a>
+        <a href="#prendre-rendez-vous">Prendre Rendez-vous</a>
+    </div>
+    <div class="corner-button">
+        <span style="color: black; font-size: 24px;">O.F.</span>
+        <div class="corner-button-text">
+            <p>Partez à la découverte du reste de mon univers. Vous quittez l'espace tatouage.</p>
+        </div>
+    </div>
+</body>
+
+</html>

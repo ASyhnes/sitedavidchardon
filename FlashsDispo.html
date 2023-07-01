@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flashs Dispo - David Chardon - Liminal Frequencies</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <style>
+        body {
+            margin: 0;
+            padding: 80px 0 0; /* Espace supplémentaire en haut */
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            align-items: flex-start; /* Ajuster l'alignement avec la barre de navigation */
+            justify-content: center;
+            height: 100vh;
+            background-color: #ffffff;
+            overflow-y: scroll;
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            transition: background-color 0.3s;
+        }
+        .sidebar a.active {
+            color: #000;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .content {
+            height: 100%;
+            width: calc(100% - 200px - 20px - 200px); /* Ajuster la largeur avec l'espace entre la barre de navigation et le bord droit */
+            background-color: transparent; /* Supprimer le fond gris */
+            padding: 20px;
+            display: flex;
+            justify-content: flex-start; /* Ajuster l'alignement avec la barre de navigation */
+            align-items: flex-start; /* Ajuster l'alignement avec la barre de navigation */
+            flex-wrap: wrap;
+            gap: 20px;
+            transform: translateX(200px); /* Décaler les cases vers la droite */
+        }
+        .rectangle {
+            width: 150px;
+            height: 200px;
+            background-color: #ffffff;
+            transition: transform 0.3s;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #ffffff;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Élargir le halo blanc */
+            /*overflow: hidden;  Masquer le contenu débordant */
+        }
+        .rectangle img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+        .rectangle::after {
+            content: "Lorem ipsum, réserver ce flash" ;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 200px;
+            height: 100%;
+            background-color: rgba(200, 200, 200, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #000000;
+            transition: transform 0.3s;
+            transform: translateX(-100%);
+        }
+        .rectangle:hover {
+            transform: scale(2.5); 
+            z-index: 9999; /* Place l'image au-dessus des autres */
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.7); /* Ajuster le halo blanc lors du zoom */
+        }
+        .rectangle:hover::after {
+            transform: translateX(0);
+        }.navbar {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #555;
+            margin-left: 10px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="connexion.html">Connexion</a>
+    </div>
+    <div class="sidebar">
+        <a href="IntroTatouage.html">Présentation</a>
+        <a href="Galerie.html">Galerie</a>
+        <a class="active" href="FlashsDispo.html">Flashs Dispo</a>
+        <a href="ProjetSurMesure.html">Projet sur Mesure</a>
+        <a href="SoinAvantApres.html">Soin Avant/Après</a>
+        <a href="PrendreRendezVous.html">Prendre Rendez-vous</a>
+    </div>
+    <div class="content">
+        <div class="rectangle"><img src="Flashsprovisoirs/B_N Demon of freedom.jpg" alt="Demon of Freedom"></div>
+        <div class="rectangle"><img src="Flashsprovisoirs/B_N Le joueur de vie.png" alt="Joueur de vie"></div>
+        <div class="rectangle"><img src="Flashsprovisoirs/humandumb (4).jpg" alt="Human Dumb"></div>
+        <div class="rectangle"><img src="Flashsprovisoirs/latextikicat.jpg" alt="Latextiki cat"></div>
+        <div class="rectangle">5</div>
+        <div class="rectangle">6</div>
+        <div class="rectangle">7</div>
+        <div class="rectangle">8</div>
+        <div class="rectangle">9</div>
+        <div class="rectangle">10</div>
+        <div class="rectangle">11</div>
+        <div class="rectangle">12</div>
+        <div class="rectangle">13</div>
+        <div class="rectangle">14</div>
+        <div class="rectangle">15</div>
+        <div class="rectangle">16</div>
+        <div class="rectangle">17</div>
+        <div class="rectangle">18</div>
+        <div class="rectangle">19</div>
+        <div class="rectangle">20</div>
+        <div class="rectangle">21</div>
+        <div class="rectangle">22</div>
+        <div class="rectangle">23</div>
+        <div class="rectangle">24</div>
+        <div class="rectangle">25</div>
+        <div class="rectangle">26</div>
+        <div class="rectangle">27</div>
+        <div class="rectangle">28</div>
+        <div class="rectangle">29</div>
+        <div class="rectangle">30</div>
+        <div class="rectangle">31</div>
+        <div class="rectangle">32</div>
+        <div class="rectangle">33</div>
+        <div class="rectangle">34</div>
+        <div class="rectangle">35</div>
+        <div class="rectangle">36</div>
+        <div class="rectangle">37</div>
+        <div class="rectangle">38</div>
+        <div class="rectangle">39</div>
+        <div class="rectangle">40</div>
+    </div>
+</body>
+
+</html>

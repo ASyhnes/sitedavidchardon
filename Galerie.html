@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Galerie - David Chardon - Liminal Frequencies</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <!-- Ajouter le lien vers le fichier CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            transition: background-color 0.3s;
+        }
+        .sidebar a.active {
+            color: #000;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .content {
+            height: 100%;
+            width: calc(100% - 200px);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-deck {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            flex-basis: calc(33.33% - 20px);
+            max-width: calc(33.33% - 20px);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .navbar {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #555;
+            margin-left: 10px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="connexion.html">Connexion</a>
+    </div>
+    <div class="sidebar">
+        <a href="IntroTatouage.html">Présentation</a>
+        <a class="active" href="Galerie.html">Galerie</a>
+        <a href="FlashsDispo.html">Flash Dispo</a>
+        <a href="ProjetSurMesure.html">Projet sur Mesure</a>
+        <a href="SoinAvantApres.html">Soin Avant/Après</a>
+        <a href="PrendreRendezVous.html">Prendre Rendez-vous</a>
+    </div>
+    <div class="content">
+        <div class="card-deck">
+            <div class="card">
+                <img src="tatouages/1-copie-1.jpg" alt="Image 1">
+                <div class="card-body">
+                    <h5 class="card-title">Titre de l'image 1</h5>
+                    <p class="card-text">Description de l'image 1</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="tatouages/1617090464_small.jpg" alt="Image 2">
+                <div class="card-body">
+                    <h5 class="card-title">Titre de l'image 2</h5>
+                    <p class="card-text">Description de l'image 2</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="tatouages/crap-tattoo-23.jpg" alt="Image 3">
+                <div class="card-body">
+                    <h5 class="card-title">Titre de l'image 3</h5>
+                    <p class="card-text">Description de l'image 3</p>
+                </div>
+            </div>
+            <!-- Ajouter plus de cartes d'images ici -->
+        </div>
+    </div>
+
+    <!-- Inclure le script JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
